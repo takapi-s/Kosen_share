@@ -1,5 +1,6 @@
 ![kosen](https://github.com/puni-pro/Kosen_share/blob/main/assets/KOSEN.png?raw=true) 
-***
+
+
 # Privacy Policy
 # 第一条[利用者情報の取得]
 本アプリを使用するには、アカウントが必要であり、アカウントを作成するには、特定の情報を提供する必要があります。
@@ -21,4 +22,18 @@
 
 # [お問い合わせ]
 何かご不明の点があればお問い合わせください
+
 shun.works.company@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
