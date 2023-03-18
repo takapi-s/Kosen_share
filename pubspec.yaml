@@ -50,6 +50,7 @@ dependencies:
     gallery_saver: ^2.3.2
     image_gallery_saver: ^1.7.1
     flutter_launcher_icons: ^0.12.0
+    webview_flutter: ^2.0.12 # 追加するパッケージ
 
 
 flutter_icons:

@@ -8,6 +8,7 @@ import 'package:kosen_test_trades/hotel_booking/favoritesScreen.dart';
 import 'package:kosen_test_trades/hotel_booking/hotel_list_view.dart';
 import 'package:kosen_test_trades/hotel_booking/model/hotel_list_data.dart';
 import 'package:flutter/material.dart';
+import 'package:kosen_test_trades/hotel_booking/settingScreen.dart';
 import '../main.dart';
 import 'filters_screen.dart';
 import 'hotel_app_theme.dart';
@@ -250,6 +251,8 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                         leading: Icon(Icons.list_alt),
                         title: Text('MyList'),
                         onTap: () {
+
+                          Navigator.of(context).pop();
                           Navigator.of(context).push(MaterialPageRoute(
                               builder: (BuildContext context) => MyListScreen()));
                           // Drawer内のメニュー項目がタップされたときの処理を実装する
@@ -259,6 +262,8 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                         leading: Icon(Icons.favorite_border),
                         title: Text('Favorites'),
                         onTap: () {
+
+                          Navigator.of(context).pop();
                           Navigator.of(context).push(MaterialPageRoute(
                               builder: (BuildContext context) => FavoriteScreen()));
                           // Drawer内のメニュー項目がタップされたときの処理を実装する
@@ -275,9 +280,21 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                   ),
                 ),
                 ListTile(
-                  leading: Icon(Icons.logout_outlined),
-                  title: Text("Log Out"),
+                  leading: Icon(Icons.privacy_tip_outlined),
+                  title: Text("privacy policy"),
                   onTap: () {
+
+                    Navigator.of(context).pop();
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => SettingScreenPage()));
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.logout_outlined),
+                  title: Text("Logout"),
+                  onTap: () {
+
+                    Navigator.of(context).pop();
                     showDialog(
                       context: context,
                       builder: (BuildContext context) {
@@ -296,6 +313,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                                   .primaryColor)),
                               onPressed: () {
                                 _handleSignOut();
+
                                 Navigator.of(context).pushReplacement(
                                   MaterialPageRoute(builder: (context) => App()),
                                 );
