@@ -25,7 +25,7 @@
 
 shun.works.company@gmail.com
 
-[任意のリンク名](Terms_of_Use.md)
+[利用規約](Terms_of_Use.md)
 
 
 
