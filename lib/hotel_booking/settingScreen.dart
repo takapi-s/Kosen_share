@@ -28,7 +28,7 @@ class _SettingScreenPage extends State<SettingScreenPage> {
             .background,
       ),
       body: WebView(
-        initialUrl: 'https://puni-pro.github.io/Kosen_share/',  //表示したいWebページを指定する
+        initialUrl: 'https://takapi-s.github.io/Kosen_share/',  //表示したいWebページを指定する
         javascriptMode: JavascriptMode.unrestricted, // JavaScriptを有効にする
       ),
       );
